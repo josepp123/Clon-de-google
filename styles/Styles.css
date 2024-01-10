@@ -2,18 +2,22 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: arial,sans-serif;
 
 }
 
 body {
-   background-color: #202124
+   background-color: #202124;
+   display: grid;               /*esta parte sacada de youtue explicacion*/
+   min-height: 100vh;
+   grid-template-rows: auto 1fr auto;
 }
 
 header {
     display: flex;
     justify-content: flex-end;
     height: 60px;
-    /*background-color: teal;*/
+   
     padding: 0 18px;
 }
 
@@ -30,8 +34,8 @@ header .options a {
 }
 
 header .options a img {
-    height: 32px;
-    width: 32px;
+    height: 20px;
+    width: 20px;
 }
 
 header .options a:nth-child(4) input {
@@ -46,4 +50,137 @@ header .options a:nth-child(4) input {
 header .options a:nth-child(4) input:hover {
     cursor: pointer;
     background-color: #abc9f8;
+}
+main{
+    height: calc(100% - 60px - 90px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+main .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    
+
+}
+
+main .container figure{
+    max-height: 92px;
+
+}
+
+main .container figure img{
+    height: 100%;
+    
+}
+main .container .searcher {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    height: 40px;
+    width: 600px;
+    padding: 8px 12px;
+    border: none;
+    outline: none;
+    border: 1px solid gray;
+    border-radius: 24px;
+
+
+}
+.search-logo img{
+    background-color: transparent;
+    width: 18px;
+    height: 18px;
+    border: none;
+    background-position: center;
+    background-repeat: no-repeat; 
+}
+.search-logo img hover{
+    cursor: pointer;
+    background-color: #abc9f8;
+}
+
+.micro-logo img{
+    background-color: transparent;
+    width: 18px;
+    height: 18px;
+    border: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+.camera-logo img{
+    background-color: transparent;
+    width: 18px;
+    height: 18px;
+    border: none;
+    background-position: center;
+    background-repeat: no-repeat; 
+}
+
+main .container .searcher input {
+    
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    color: whitesmoke;
+
+}
+
+main .container .searcher-button {
+    display: flex;
+    gap: 10px;
+}
+
+main .container .searcher-button button {
+    border: none;
+    border-radius: 5px;
+    background-color: #303134 ;
+    padding: 12px;
+    color: whitesmoke;
+    
+}
+
+main .container p {
+    font-size: small;
+    color:whitesmoke ;
+}
+
+footer{
+    margin-top: auto;
+    background-color: #171717;
+    display: flex;
+    flex-direction: column;
+    height: 95px;
+    color: #999da2;
+    font-size: 14px;
+
+}
+footer section{
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    height: 50%;
+
+}
+
+footer .more-info {
+    border-top: #3D4143 solid 1px;
+    display: flex;
+    justify-content: space-between;
+}
+footer .more-info div {
+    display: flex;
+    gap: 12px;
+    
+}
+
+footer .more-info div a{
+    color:whitesmoke;
+    text-decoration: none;
 }
