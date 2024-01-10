@@ -160,7 +160,11 @@ main .container p {
     color:whitesmoke ;
 }
 main .container a {
+    text-decoration: none;
     color:#8BB5F8 ;
+}
+main .container a:hover {
+    text-decoration: underline;
 }
 
 footer{
