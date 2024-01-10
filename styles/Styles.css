@@ -24,16 +24,14 @@ header {
 header .options {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 20px;
 }
 
 header .options a {
     font-family: arial,sans-serif;
     text-decoration: none;
     color:#bdc1c6;
-    background-image: linear-gradient(#bdc1c6);
-    background-size: 0%;
-    background-position: left bottom;
+   
 }
 header .options a:hover {
     text-decoration: underline;
@@ -152,7 +150,7 @@ main .container .searcher-button button {
 main .container .searcher-button button:hover {
     cursor: pointer;
     /*box-shadow: #bdc1c6;*/
-    border: solid 0.5px;
+    border: solid 0.5px; /*esto hace que se mueva el buscador solucionar*/
 }
 
 main .container p {
@@ -192,7 +190,7 @@ footer .more-info {
 }
 footer .more-info div {
     display: flex;
-    gap: 12px;
+    gap: 20px;
     
 }
 
