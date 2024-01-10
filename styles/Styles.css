@@ -31,6 +31,12 @@ header .options a {
     font-family: arial,sans-serif;
     text-decoration: none;
     color:#bdc1c6;
+    background-image: linear-gradient(#bdc1c6);
+    background-size: 0%;
+    background-position: left bottom;
+}
+header .options a:hover {
+    text-decoration: underline;
 }
 
 header .options a img {
@@ -81,33 +87,31 @@ main .container .searcher {
     display: flex;
     align-items: center;
     gap: 8px;
-    height: 40px;
+    height: 50px;
     width: 600px;
     padding: 8px 12px;
     border: none;
     outline: none;
     border: 1px solid gray;
     border-radius: 24px;
-
-
+}
+main .container .searcher:hover {
+   background-color: rgb(49,48,52) ;
 }
 .search-logo img{
     background-color: transparent;
-    width: 18px;
-    height: 18px;
+    width: 20px;
+    height: 20px;
     border: none;
     background-position: center;
     background-repeat: no-repeat; 
 }
-.search-logo img hover{
-    cursor: pointer;
-    background-color: #abc9f8;
-}
+
 
 .micro-logo img{
     background-color: transparent;
-    width: 18px;
-    height: 18px;
+    width: 20px;
+    height: 25px;
     border: none;
     background-position: center;
     background-repeat: no-repeat;
@@ -116,8 +120,8 @@ main .container .searcher {
 
 .camera-logo img{
     background-color: transparent;
-    width: 18px;
-    height: 18px;
+    width: 25px;
+    height: 25px;
     border: none;
     background-position: center;
     background-repeat: no-repeat; 
@@ -138,17 +142,25 @@ main .container .searcher-button {
 }
 
 main .container .searcher-button button {
-    border: none;
+    border:none;
     border-radius: 5px;
     background-color: #303134 ;
     padding: 12px;
     color: whitesmoke;
     
 }
+main .container .searcher-button button:hover {
+    cursor: pointer;
+    /*box-shadow: #bdc1c6;*/
+    border: solid 0.5px;
+}
 
 main .container p {
     font-size: small;
     color:whitesmoke ;
+}
+main .container a {
+    color:#8BB5F8 ;
 }
 
 footer{
@@ -183,4 +195,7 @@ footer .more-info div {
 footer .more-info div a{
     color:whitesmoke;
     text-decoration: none;
+}
+footer .more-info div a:hover{
+    text-decoration: underline;
 }
