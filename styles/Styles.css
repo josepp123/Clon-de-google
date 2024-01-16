@@ -84,7 +84,7 @@ main .container figure img{
 main .container .searcher {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 20px;
     height: 50px;
     width: 600px;
     padding: 8px 12px;
@@ -97,12 +97,12 @@ main .container .searcher:hover {
    background-color: rgb(49,48,52) ;
 }
 .search-logo img{
-    background-color: transparent;
+    /*background-color: transparent;*/
     width: 20px;
     height: 20px;
-    border: none;
+    /*border: none;
     background-position: center;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;*/ 
 }
 .micro-button{
     background-color: transparent;
@@ -113,19 +113,23 @@ main .container .searcher:hover {
   
     width: 15px;
     height: 20px;
-    
-    
+
+}
+.micro-logo:hover {
+    cursor: pointer;
 }
 
 .camera-logo {
-    background-color: transparent;
+    /*background-color: transparent;*/
     width: 20px;
     height: 20px;
-    border: none;
-    background-position: center;
-    background-repeat: no-repeat; 
+    /*border: none;*/
+    /*background-position: center;*/
+    /*background-repeat: no-repeat;*/ 
 }
-
+.camera-logo:hover {
+    cursor: pointer;
+}
 main .container .searcher input {
     
     width: 100%;
